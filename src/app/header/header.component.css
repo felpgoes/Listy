@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: none;
+}
+
+.container{
+    position: absolute;
+    top: 20px;
+}
+
+.navbar{
+    font-family: 'Oswald', 'Ubuntu', sans-serif;
+    height: 10vh; 
+    background: #8614ce;
+}
+
+.navbar-start{
+    margin-left: 10vh;
+}
+
+.btn-nav-start{
+    color:#fff;
+    background: #8614ce;
+    border-color:#8614ce;
+    transition: .2s;
+    font-size: 15px;  
+}
+
+.btn-nav-start:hover{
+    color: #8614ce;
+    background: #ffffff;
+    border-color:#ffffff;
+}
+
+.navbar-brand .logo-Listy{
+    font-size: 20px;
+    font-family: 'Oswald';
+    color: #fff;
+}
+
+.create-list-button, .dropdown-button{
+    color: #8614ce;
+    background: #fff;
+    border-color:#fff;
+    transition: .2s;    
+}
+
+.create-list-button:hover, .dropdown-button:hover{
+    color: #fff;
+    background:#8614ce;
+    border-color: #8614ce;
+}
+
+.svg-inline--fa{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    font-size: 30px;
+
+}
+
