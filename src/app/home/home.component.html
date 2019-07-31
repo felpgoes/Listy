@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <div class="contentContainer">
     <div class="content">
         <h1 class="title">{{ title }}</h1>
@@ -34,6 +36,8 @@
     <div class="content">
         <h1 class="title">Começe a usar {{ title }} hoje mesmo!</h1>
         <h1 class="subtitle">Crie e compartilhe suas lista e facilite suas compras!</h1>
-        <a href="" class="button">Cadastrar</a>
+        <a href="" class="button"  [routerLink]="'/login'">Cadastrar</a>
     </div>
 </div>
+
+<app-footer></app-footer>
