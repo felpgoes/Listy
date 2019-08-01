@@ -29,14 +29,14 @@
                         Criar lista
                     </a>
                 </div>
-                <div class="navbar-item">
+                <div class="navbar-item" *ngIf="location">
                     <a class="button create-list-button" [routerLink]="'/login'">
                         <i class="fas fa-create"></i> 
                         <!-- Adicionar icone!!! -->
                         Crie sua conta
                     </a>
                 </div>
-                <div class="navbar-item" *ngIf="isLogged()">
+                <div class="navbar-item" *ngIf="!location">
                     <div class="dropdown is-active">
                         <div class="dropdown-trigger" (click)='toggleOptionsList()'>
                             <button class="button dropdown-button" aria-haspopup="true" aria-controls="dropdown-menu">

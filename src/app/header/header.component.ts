@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,13 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  public title = 'Listy'
+  
+  
+  location : boolean = false;
+  public title = 'Listy';
   showOptionsList : boolean = false;
-
-  constructor() { }
-
+  
+  constructor(
+    private router: Router
+    
+  ) {  }
+  
   ngOnInit() {
+    this.page()
+  }
+
+  page(){
+    if (this.router.url == '/') {
+      return this.location = true
+    } else {
+      return this.location = false
+    }
   }
 
   toggleOptionsList(){
