@@ -1,0 +1,38 @@
+
+.dash-header{
+    padding-top: 60px;
+    background: linear-gradient(180deg, #8614ce, #ffffff);
+    height: 20vh;
+    color: #d3d3d3
+}
+
+.dash-board{
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.box{
+    background-color: #242424;
+    color: #d3d3d3;
+
+}
+
+.box p strong{
+    color: #ffffff !important;
+}
+
+.dash-footer{
+    background: linear-gradient(180deg, #ffffff, #0f5fbb);
+    height: 20vh;
+    padding-bottom: 40px;
+}
+
+.field.is-grouped{
+    justify-content: center;
+
+}
+.button{
+    background-color: #0f5fbb;
+    border-color: #d3d3d3;
+    color: #d3d3d3;
+}

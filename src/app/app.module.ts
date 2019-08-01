@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HowUseComponent } from './how-use/how-use.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HowUseComponent } from './how-use/how-use.component';
     HomeComponent,
     FooterComponent,
     LoginComponent,
-    HowUseComponent
+    HowUseComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,10 @@ import { HowUseComponent } from './how-use/how-use.component';
       {
         path: 'list',
         component: ListComponent
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
       },
     ])
   ],
