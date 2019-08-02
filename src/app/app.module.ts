@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HowUseComponent } from './how-use/how-use.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module'
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
     RouterModule.forRoot([
       { 
         path: '',
@@ -45,7 +49,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         path: 'dashboard',
         component: DashboardComponent
       },
-    ])
+    ]),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
